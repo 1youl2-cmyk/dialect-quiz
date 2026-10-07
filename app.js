@@ -27,6 +27,7 @@ DIALECTS.forEach(region => {
 });
 function showCard() {
   $('word').textContent = deck[position].word;
+  $('example').textContent = deck[position].example;
   $('meaning').textContent = '';
   $('progress').textContent = `${position + 1} / ${deck.length}`;
   $('bar').style.width = `${(position + 1) / deck.length * 100}%`;
